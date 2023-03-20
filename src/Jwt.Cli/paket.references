@@ -1,0 +1,8 @@
+McMaster.Extensions.CommandLineUtils
+FSharp.Core
+crayon
+Microsoft.Extensions.DependencyInjection
+NuGet.Protocol
+Tk.Extensions
+System.IdentityModel.Tokens.Jwt
+spectre.console

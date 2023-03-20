@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Copyright>Copyright 2023 Tony Knight</Copyright>
+    <Authors>Tony Knight</Authors>
+    <Version>0.0.0</Version>
+    <Description></Description>
+    <AssemblyName>jwt</AssemblyName>
+    <PackageId>jwt-cli</PackageId>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>jwt</ToolCommandName>
+    <RepositoryUrl>https://github.com/tonycknight/jwt-cli</RepositoryUrl>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RootNamespace>Jwt.Cli</RootNamespace>
+  </PropertyGroup>
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
+</Project>

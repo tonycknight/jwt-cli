@@ -17,7 +17,7 @@ namespace Jwt.Cli.Commands
             {
                 Crayon.Output.Bright.Cyan(app.Parent?.Name),
                 Crayon.Output.Bright.Yellow($"Version {currentVersion} beta"),
-                Crayon.Output.Bright.Yellow($"Repo: https://github.com/tonycknight/epoch-cli"),
+                Crayon.Output.Bright.Yellow($"Repo: https://github.com/tonycknight/jwt-cli"),
             };
 
             if (nugetVersion != null && currentVersion != nugetVersion)

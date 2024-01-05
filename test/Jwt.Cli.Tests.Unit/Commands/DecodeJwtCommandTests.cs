@@ -94,7 +94,7 @@ namespace Jwt.Cli.Tests.Unit.Commands
             {
                 var cols = row.OfType<Markup>().ToList();
                 cols.Should().HaveCount(colCount);
-                cols.OfType<Text>().All(t => t.Length > 1).Should().BeTrue();
+                cols.OfType<Markup>().All(t => t.Length > 1).Should().BeTrue();
                 // Sadly, there's no way to inspect the contents of each column
             }
 #pragma warning restore CS8602 // Dereference of a possibly null reference.

@@ -26,6 +26,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jwt.Cli", "src\Jwt.Cli\Jwt.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jwt.Cli.Tests.Unit", "test\Jwt.Cli.Tests.Unit\Jwt.Cli.Tests.Unit.csproj", "{3010BE8E-56A0-457A-873E-38CD3A96EF7D}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "build", "build\build.fsproj", "{F8C5AE14-A65C-49CE-95F3-5F9C227000B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +42,10 @@ Global
 		{3010BE8E-56A0-457A-873E-38CD3A96EF7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3010BE8E-56A0-457A-873E-38CD3A96EF7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3010BE8E-56A0-457A-873E-38CD3A96EF7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8C5AE14-A65C-49CE-95F3-5F9C227000B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8C5AE14-A65C-49CE-95F3-5F9C227000B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8C5AE14-A65C-49CE-95F3-5F9C227000B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8C5AE14-A65C-49CE-95F3-5F9C227000B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +53,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4FE915A6-37AA-47F0-9EBF-5D9F6B8D5BDF} = {41AEECFF-6354-4940-8C63-B77AA862149E}
 		{3010BE8E-56A0-457A-873E-38CD3A96EF7D} = {CD391199-006A-473B-91C5-9E1A7BF4F5C4}
+		{F8C5AE14-A65C-49CE-95F3-5F9C227000B1} = {CF8FC603-C38A-4B6E-98CB-B7565798D0F2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {766F3128-91A5-48F4-900F-F28CB86EDA55}

@@ -15,7 +15,8 @@ namespace Jwt.Cli
 
         public static string? GetAppVersion()
             => Assembly.GetExecutingAssembly()
-                       .GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion;
+                       .GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion
+                       .ToVersion().ToString();
 
         public static Task<string?> GetCurrentNugetVersion()
             => new Nuget.NugetClient().GetLatestNugetVersionAsync("jwt-cli");

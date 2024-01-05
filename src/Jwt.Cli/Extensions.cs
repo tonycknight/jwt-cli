@@ -61,5 +61,16 @@ namespace Jwt.Cli
                 }
             }
         }
+
+        public static Version ToVersion(this string version)
+        {
+            var x = version.IndexOf('+');
+            if (x >= 0)
+            {
+                version = version.Substring(0, x);
+            }
+
+            return Version.Parse(version);
+        }
     }
 }

@@ -129,7 +129,7 @@ let initTargets () =
 
     Target.create "Stryker" (fun _ ->
         !! "test/**/*.csproj"
-        |> Seq.iter (fun p ->   let args = sprintf "-tp %s -b 20 -m \"!**/Waffle/**\" --reporter \"json\" --reporter \"html\"" p
+        |> Seq.iter (fun p ->   let args = sprintf "-tp %s -b 20 --reporter \"json\" --reporter \"html\"" p
                                 let result = DotNet.exec id "dotnet-stryker" args
                                 if not result.OK then failwithf "Stryker failed!"
                                 )

@@ -27,7 +27,7 @@ jobs:
         run: dotnet tool restore
               
       - name: Run SCA
-        run: dotnet fake run "build.fsx" -t "SCA"  
+        run: dotnet run --project ./build/build.fsproj -c Release -t "SCA"  
       
   build:
     runs-on: ubuntu-latest
@@ -44,7 +44,7 @@ jobs:
         run: dotnet tool restore
               
       - name: Run build
-        run: dotnet fake run "build.fsx" -t "Consolidate code coverage"
+        run: dotnet run --project ./build/build.fsproj -c Release -t "Consolidate code coverage"
 
       - name: Archive tool nupkg
         uses: actions/upload-artifact@v3
@@ -106,7 +106,7 @@ jobs:
         run: dotnet tool restore
               
       - name: Run build
-        run: dotnet fake run "build.fsx" -t "Stryker"
+        run: dotnet run --project ./build/build.fsproj -c Release -t "Stryker"
 
       - name: Archive Stryker results
         uses: actions/upload-artifact@v3

@@ -12,7 +12,6 @@ namespace Jwt.Cli.Commands
         public static async Task<string> GetPackageInfoAsync(this CommandLineApplication app)
         {
             var currentVersion = ProgramBootstrap.GetAppVersion();
-            var nugetVersion = await ProgramBootstrap.GetCurrentNugetVersion();
             var descLines = new List<string>()
             {
                 Crayon.Output.Bright.Cyan(app.Parent?.Name),
@@ -20,9 +19,13 @@ namespace Jwt.Cli.Commands
                 Crayon.Output.Bright.Yellow($"Repo: https://github.com/tonycknight/jwt-cli"),
             };
 
-            if (nugetVersion != null && currentVersion != nugetVersion)
+            if (currentVersion != null)
             {
-                descLines.Add(Crayon.Output.Bright.Magenta($"An upgrade is available: {nugetVersion}"));
+                var nugetVersion = await (new Tk.Nuget.NugetClient()).GetUpgradeVersionAsync("jwt-cli", currentVersion);
+                if (nugetVersion != null)
+                {
+                    descLines.Add($"[magenta]An upgrade is available: {nugetVersion}[/]");
+                }
             }
 
             var desc = descLines.Join(Environment.NewLine);

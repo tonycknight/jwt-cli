@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
 using Spectre.Console;
+using Tk.Nuget;
 
 namespace Jwt.Cli
 {
@@ -10,15 +11,11 @@ namespace Jwt.Cli
            new ServiceCollection()
                 .AddSingleton<Jwts.IJwtParser, Jwts.JwtParser>()
                 .AddSingleton<IAnsiConsole>(sp => AnsiConsole.Create(new AnsiConsoleSettings() { ColorSystem = ColorSystemSupport.TrueColor }))
-                .AddSingleton<Nuget.INugetClient, Nuget.NugetClient>()
                 .BuildServiceProvider();
 
         public static string? GetAppVersion()
             => Assembly.GetExecutingAssembly()
                        .GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion
                        .ToVersion().ToString();
-
-        public static Task<string?> GetCurrentNugetVersion()
-            => new Nuget.NugetClient().GetLatestNugetVersionAsync("jwt-cli");
     }
 }

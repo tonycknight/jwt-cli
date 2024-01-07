@@ -13,12 +13,12 @@ nuget McMaster.Extensions.CommandLineUtils 4.0.1
 nuget Microsoft.Extensions.DependencyInjection
 nuget Microsoft.NET.Test.Sdk
 nuget nsubstitute
-nuget NuGet.Protocol
 nuget spectre.console
 nuget System.IdentityModel.Tokens.Jwt
 nuget System.Net.Http 4.3.4
 nuget System.Text.RegularExpressions 4.3.1
 nuget Tk.Extensions
+nuget Tk.Nuget
 nuget xunit
 nuget xunit.runner.visualstudio
 nuget Fake.IO.FileSystem

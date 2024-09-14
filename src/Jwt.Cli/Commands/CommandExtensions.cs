@@ -24,7 +24,7 @@ namespace Jwt.Cli.Commands
                 var nugetVersion = await (new Tk.Nuget.NugetClient()).GetUpgradeVersionAsync("jwt-cli", currentVersion);
                 if (nugetVersion != null)
                 {
-                    descLines.Add($"[magenta]An upgrade is available: {nugetVersion}[/]");
+                    descLines.Add(Crayon.Output.Bright.Magenta($"An upgrade is available: {nugetVersion}"));
                 }
             }
 

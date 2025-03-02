@@ -22,6 +22,9 @@ jobs:
 
       - name: Setup .NET SDK
         uses: actions/setup-dotnet@v4
+      
+      - name: Restore tools
+        uses: dotnet tool restore
         
       - name: Run SCA
         uses: tonycknight/pkgchk-action@v1.0.16

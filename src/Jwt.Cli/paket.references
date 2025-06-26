@@ -1,5 +1,4 @@
 McMaster.Extensions.CommandLineUtils
-FSharp.Core
 crayon
 Microsoft.Extensions.DependencyInjection
 Tk.Extensions

@@ -4,12 +4,11 @@ storage: none
 framework: net8.0
 nuget coverlet.collector
 nuget coverlet.msbuild
-nuget crayon 2.0.64
+nuget crayon
 nuget FluentAssertions
 nuget FsCheck.XUnit
-nuget FSharp.Core 6.0.3
 nuget FsUnit.Xunit
-nuget McMaster.Extensions.CommandLineUtils 4.0.1
+nuget McMaster.Extensions.CommandLineUtils
 nuget Microsoft.Extensions.DependencyInjection
 nuget Microsoft.NET.Test.Sdk
 nuget nsubstitute

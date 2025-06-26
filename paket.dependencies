@@ -7,7 +7,6 @@ nuget coverlet.msbuild
 nuget crayon
 nuget FluentAssertions
 nuget FsCheck.XUnit
-nuget FSharp.Core 6.0.3
 nuget FsUnit.Xunit
 nuget McMaster.Extensions.CommandLineUtils
 nuget Microsoft.Extensions.DependencyInjection

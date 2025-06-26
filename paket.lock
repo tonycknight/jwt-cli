@@ -45,7 +45,7 @@ NUGET
       Newtonsoft.Json (>= 13.0.1)
     Newtonsoft.Json (13.0.3)
     NHamcrest (3.4)
-    NSubstitute (5.1)
+    NSubstitute (5.3)
       Castle.Core (>= 5.1.1)
     NuGet.Common (6.14)
       NuGet.Frameworks (>= 6.14)

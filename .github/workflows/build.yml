@@ -79,14 +79,14 @@ jobs:
   
           
       - name: Archive Test results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: tests.results
           path: |
             ./test/**/TestResults/*
       
       - name: Archive Code coverage
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: codecoverage
           path: ./publish/codecoverage/*.*
@@ -137,7 +137,7 @@ jobs:
           dotnet pack ./src/Jwt.Cli/Jwt.Cli.csproj -c Release -o ./package /p:PackageVersion=${{ env.build-version-number }} /p:Version=${{ env.build-version-number }} /p:AssemblyInformationalVersion=${{ env.build-version-number }}          
 
       - name: Archive tool nupkg
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: jwt-cli.nupkg
           path: ./package/jwt*.nupkg
@@ -163,7 +163,7 @@ jobs:
           dotnet dotnet-stryker -tp ./test/Jwt.Cli.Tests.Unit/Jwt.Cli.Tests.Unit.csproj -b 20 -m !**/Waffle/** --reporter json --reporter html
 
       - name: Archive Stryker results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         if: always()
         with:
           name: stryker.results
@@ -185,7 +185,7 @@ jobs:
           dotnet-version: ${{ env.dotnet-version }}
 
       - name: Download package
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: jwt-cli.nupkg
           path: ${{ github.workspace }}/artifacts

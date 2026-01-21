@@ -14,7 +14,7 @@ namespace Jwt.Cli.Commands
             var currentVersion = ProgramBootstrap.GetAppVersion();
             var descLines = new List<string>()
             {
-                Crayon.Output.Bright.Cyan(app.Parent?.Name),
+                Crayon.Output.Bright.Cyan(app.Parent?.Name!),
                 Crayon.Output.Bright.Yellow($"Version {currentVersion} beta"),
                 Crayon.Output.Bright.Yellow($"Repo: https://github.com/tonycknight/jwt-cli"),
             };

@@ -2,7 +2,7 @@
 
 [![Build & Release](https://github.com/tonycknight/jwt-cli/actions/workflows/build.yml/badge.svg)](https://github.com/tonycknight/jwt-cli/actions/workflows/build.yml)
 
-![Nuget](https://img.shields.io/nuget/v/jwt-cli)
+[![Nuget](https://img.shields.io/nuget/v/jwt-cli)](https://www.nuget.org/packages/jwt-cli/)
 
 A `dotnet tool` for various development tasks.
 

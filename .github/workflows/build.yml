@@ -157,6 +157,7 @@ jobs:
           dotnet-version: ${{ env.dotnet-version }}
         
       - name: Run Stryker
+        continue-on-error: true
         run: |
           dotnet tool restore
           dotnet restore

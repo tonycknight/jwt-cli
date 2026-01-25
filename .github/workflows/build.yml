@@ -160,7 +160,7 @@ jobs:
         run: |
           dotnet tool restore
           dotnet restore
-          dotnet dotnet-stryker -tp ./test/Jwt.Cli.Tests.Unit/Jwt.Cli.Tests.Unit.csproj -b 20 -m !**/Waffle/** --reporter json --reporter html
+          dotnet dotnet-stryker -tp ./test/Jwt.Cli.Tests.Unit/Jwt.Cli.Tests.Unit.csproj -b 1 --reporter json --reporter html
 
       - name: Archive Stryker results
         uses: actions/upload-artifact@v6

@@ -23,7 +23,7 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.2" />
     <PackageReference Include="Spectre.Console.Cli" Version="0.53.1" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.15.0" />
-    <PackageReference Include="Tk.Extensions" Version="0.1.240" />
+    <PackageReference Include="Tk.Extensions" Version="0.1.243" />
     <PackageReference Include="Tk.Nuget" Version="0.2.167" />
   </ItemGroup>  
 </Project>

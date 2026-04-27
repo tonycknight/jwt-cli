@@ -24,6 +24,6 @@
     <PackageReference Include="Spectre.Console.Cli" Version="0.55.0" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.17.0" />
     <PackageReference Include="Tk.Extensions" Version="0.1.285" />
-    <PackageReference Include="Tk.Nuget" Version="0.2.204" />
+    <PackageReference Include="Tk.Nuget" Version="0.2.213" />
   </ItemGroup>  
 </Project>
